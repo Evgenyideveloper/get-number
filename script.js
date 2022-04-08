@@ -2,10 +2,11 @@
 const makeNumber = () =>{
 
 	let humanNumber = +prompt('Угадай число от 1 до 100');
+	let randomNumber = Math.floor(100 * Math.random()) + 1;
 
 	function trableNumber(){
 
-		let randomNumber = Math.floor(100 * Math.random()) + 1;
+		
 		if(humanNumber > randomNumber){
 			console.log("случайное число: " + randomNumber);
 			console.log("загаданное число: " + humanNumber);
@@ -40,7 +41,7 @@ const makeNumber = () =>{
 		}
 		trableNumber();
 	}
-
 	trableNumber();
+	
 }
 makeNumber();
