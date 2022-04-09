@@ -10,14 +10,14 @@ const makeNumber = () =>{
 		if(humanNumber > randomNumber){
 			console.log("случайное число: " + randomNumber);
 			console.log("загаданное число: " + humanNumber);
-			alert('Загаданное число больше');	
+			alert('Загаданное число меньше');	
 			let newNumber1 = +prompt('Угадай число от 1 до 100');
 			humanNumber = newNumber1;
 		}
 		if(humanNumber < randomNumber && humanNumber !== 0){
 			console.log("случайное число: " + randomNumber);
 			console.log("загаданное число: " + humanNumber);
-			alert('Загаданное число меньше');
+			alert('Загаданное число больше');
 			let newNumber2 = +prompt('Угадай число от 1 до 100');
 			humanNumber = newNumber2;
 		}
